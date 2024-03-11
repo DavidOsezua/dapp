@@ -1,8 +1,7 @@
 .heroSection {
   background-color: #08023c;
   position: relative;
-  height: 90vh;
-  padding-top: 10rem;
+  padding-top: 1rem;
 }
 
 .heroContainer {
@@ -13,12 +12,12 @@
   padding-right: 1rem;
   color: #fff;
   display: flex;
-  height: 60vh;
-  align-items: flex-end;
+  flex-direction: column;
+  min-height: 70vh;
 }
 
 .title {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-style: normal;
   font-weight: 700;
 }
@@ -29,12 +28,28 @@
   right: -5%;
 }
 
+@media screen and (max-width: 768px) {
+  .heroImage {
+    display: none;
+  }
+
+  .check {
+    display: none;
+    transition: all 2s ease-in-out;
+  }
+}
+
+.showMenu {
+  display: block;
+}
+
 @media screen and (min-width: 912px) {
   .heroSection {
     padding-top: 3rem;
     height: 70vh;
   }
   .heroContainer {
+    flex-direction: row;
     align-items: center;
   }
 
@@ -51,5 +66,9 @@
     line-height: 58px;
 
     color: #ffffff;
+  }
+
+  .check {
+    display: none;
   }
 }

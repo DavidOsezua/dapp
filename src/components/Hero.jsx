@@ -2,14 +2,18 @@ import React from "react";
 import styles from "./Hero.module.css";
 import "../App.css";
 import { heroImg, connectBtn, sync } from "../assets";
-
-const Hero = () => {
+import NavMenu from "./NavMenu";
+const Hero = ({ toggle, toogleHandler }) => {
   return (
     <section className={`${styles.heroSection}`}>
       <div className={`${styles.heroImage}`}>
         <img src={heroImg} className={`${styles.img}`} />
       </div>
       <div className={`${styles.heroContainer}`}>
+        <div className={`${styles.check}  ${toggle && styles.showMenu}`}>
+          <NavMenu />
+        </div>
+
         <div className={`${styles.firstCol}`}>
           <h1 className={`${styles.title}`}>
             Validate, Synchronize, and Rectify your assests and wallets

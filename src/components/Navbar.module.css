@@ -36,18 +36,23 @@
   color: #631b94;
 }
 
+.menuContainer{
+  display: flex;
+  gap: 1rem;
+}
+
 @media screen and (max-width: 768px) {
-  .navMenu {
-    position: fixed;
-    background-color: #210856;
-    padding: 1rem 2rem;
-    width: 100%;
-    min-height: 50%;
-    top: -100%;
-    display: flex;
+  .check {
+    display: none;
+  }
+
+  .menuContainer{
     flex-direction: column;
-    gap: 1rem;
-  
+  }
+  .navMenu {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0.3rem;
   }
 }
 

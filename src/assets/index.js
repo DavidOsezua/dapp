@@ -85,6 +85,7 @@ import Rectification from "./Rectification.svg";
 import Gas from "./Gas.svg";
 import Spillage from "./Spillage.svg";
 import ConnectionError from "./ConnectionError.svg";
+import search from "./search.svg";
 export {
   Logo,
   ham,
@@ -173,4 +174,5 @@ export {
   Spillage,
   Gas,
   ConnectionError,
+  search,
 };

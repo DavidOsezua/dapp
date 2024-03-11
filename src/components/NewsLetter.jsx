@@ -1,5 +1,5 @@
 import React from "react";
-import { Logo, ham } from "../assets";
+import { Logo, ham, search } from "../assets";
 import styles from "./NewsLetter.module.css";
 
 const NewsLetter = () => {
@@ -34,12 +34,8 @@ const NewsLetter = () => {
         </div>
 
         {/* SECOND COL */}
-        <div>
-          <p></p>
-          <div>
-            <input />
-            <button>Search</button>
-          </div>
+        <div className="pb-[1rem]">
+          <img src={search} className="w-[500px] mx-[auto]" />
         </div>
       </div>
 

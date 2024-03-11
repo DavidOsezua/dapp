@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-unused-vars
-import React from "react";
+import React, { useState } from "react";
 import {
   FeaturesComponent,
   Hero,
@@ -12,11 +12,16 @@ import {
 } from "../components";
 
 const HomePage = () => {
+  const [toggle, setToggle] = useState(false);
+
+  const toggleHandler = () => {
+    setToggle((prev) => !prev);
+  };
   return (
     <>
-      <Navbar />
+      <Navbar toggleHandler={toggleHandler} />
       <section className="overflow-hidden">
-        <Hero />
+        <Hero toggle={toggle} toggleHandler={toggleHandler} />
         <InstructionComponent />
         <FeaturesComponent />
         <CTA />
