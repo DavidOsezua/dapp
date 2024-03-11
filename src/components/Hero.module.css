@@ -1,0 +1,55 @@
+.heroSection {
+  background-color: #08023c;
+  position: relative;
+  height: 90vh;
+  padding-top: 10rem;
+}
+
+.heroContainer {
+  max-width: 1425px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: #fff;
+  display: flex;
+  height: 60vh;
+  align-items: flex-end;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.heroImage {
+  position: absolute;
+  top: -10%;
+  right: -5%;
+}
+
+@media screen and (min-width: 912px) {
+  .heroSection {
+    padding-top: 3rem;
+    height: 70vh;
+  }
+  .heroContainer {
+    align-items: center;
+  }
+
+  .heroImage {
+    top: 50px;
+  }
+
+  .title {
+    max-width: 611px;
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 58px;
+
+    color: #ffffff;
+  }
+}
