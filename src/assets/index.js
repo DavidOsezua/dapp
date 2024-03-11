@@ -79,7 +79,12 @@ import ATWallet from "./ATWallet.jpeg";
 import imToken from "./imToken.jpeg";
 import others from "./imToken.jpeg";
 import Tongue from "./Tongue.jpeg";
-
+import migration from "./migration.svg";
+import AssetRecovery from "./AssetRecovery.svg";
+import Rectification from "./Rectification.svg";
+import Gas from "./Gas.svg";
+import Spillage from "./Spillage.svg";
+import ConnectionError from "./ConnectionError.svg";
 export {
   Logo,
   ham,
@@ -162,4 +167,10 @@ export {
   sync,
   connectBtn,
   others,
+  migration,
+  AssetRecovery,
+  Rectification,
+  Spillage,
+  Gas,
+  ConnectionError,
 };
