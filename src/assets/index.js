@@ -86,6 +86,9 @@ import Gas from "./Gas.svg";
 import Spillage from "./Spillage.svg";
 import ConnectionError from "./ConnectionError.svg";
 import search from "./search.svg";
+import close from "./close.svg";
+import rewardContent from "./rewardContent.svg";
+import usdt from "./usdt.svg";
 export {
   Logo,
   ham,
@@ -175,4 +178,7 @@ export {
   Gas,
   ConnectionError,
   search,
+  close,
+  rewardContent,
+  usdt,
 };

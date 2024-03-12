@@ -28,6 +28,19 @@
   right: -5%;
 }
 
+.text {
+  /* Using our Cutting Edge Encryption Technology we employ state-of-the-art encryption protocols to fortify the walls of your digital wallet. */
+
+  max-width: 711px;
+  height: 60px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15.5px;
+  line-height: 30px;
+
+  color: rgba(239, 239, 239, 0.8);
+}
+
 @media screen and (max-width: 768px) {
   .heroImage {
     display: none;
