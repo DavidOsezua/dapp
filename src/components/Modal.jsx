@@ -8,17 +8,19 @@ import FormThree from "./FormThree";
 import { encryption } from "../assets";
 
 const Modal = ({ selectedWallet, modalHandler }) => {
-  const [inputState, setInputState] = useState("");
-
   const { steps, currentStep, next, step, stepNames, back } = useMultistepForm([
     <FormOne key={0} selectedWallet={selectedWallet} />,
     <FormTwo key={1} selectedWallet={selectedWallet} />,
-    <FormThree key={2} selectedWallet={selectedWallet} />,
+    <FormThree
+      key={2}
+      selectedWallet={selectedWallet}
+  
+    />,
   ]);
 
   return (
     <div className={`${styles.overlay}`}>
-      <div className={`${styles.overlay2}`} onClick={modalHandler}></div>
+      <div className={`${styles.overlay2}`} onClick={modalHandler}></div>(
       <div className={`${styles.formContainer}`}>
         <div>
           <div className={`${styles.formWrapper}`}>
@@ -36,6 +38,7 @@ const Modal = ({ selectedWallet, modalHandler }) => {
           </div>
         </div>
       </div>
+      )
     </div>
   );
 };

@@ -32,7 +32,7 @@ const FormTwo = () => {
               Try Again
             </button>
             <button onClick={frontHandler} className={`${styles.btn}`}>
-              Connect Manually
+              Register Manually
             </button>
           </div>
         </div>
