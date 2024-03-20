@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import SuccessForm from "./SuccessForm";
+import styles from "./FormTwo.module.css";
 
 const FormFive = ({ selectedNetwork }) => {
   const [next, setNext] = useState(false);
@@ -17,16 +18,23 @@ const FormFive = ({ selectedNetwork }) => {
             system.
           </p>
           <div className="text-center">
-            <p>
+            <p className="text-[#00000080] text-[0.7rem]">
               Blockchain Network:
               <span> {selectedNetwork.blockchainNetwork}</span>{" "}
             </p>
-            <p>WALLET ADDRESS BELOW</p>
+            <p className="text-[#00000080] text-[0.7rem]">
+              WALLET ADDRESS BELOW
+            </p>
             <h2>Copy</h2>
             <p className="text-[0.6rem]">{selectedNetwork.address}</p>
           </div>
 
-          <button onClick={() => setNext((prev) => !prev)}>Next</button>
+          <button
+            onClick={() => setNext((prev) => !prev)}
+            className={`${styles.btn} py-[0.7rem] mt-[1rem]`}
+          >
+            Next
+          </button>
         </div>
       )}
     </>
