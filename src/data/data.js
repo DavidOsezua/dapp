@@ -243,3 +243,22 @@ export const buttonLinks = [
   { logo: "", link: "Solana" },
   { logo: "", link: "Cardano" },
 ];
+
+export const blockchainNetwork = [
+  {
+    blockchainNetwork: "ETH (ERC20)",
+    address: "0x6515cfcd3b7FD00c9b8228Af81A62D7eaD7d8132",
+  },
+  {
+    blockchainNetwork: "BNB (BEP20)",
+    address: "0x6515cfcd3b7FD00c9b8228Af81A62D7eaD7d8132",
+  },
+  {
+    blockchainNetwork: "SOL",
+    address: "ATzG7fG8kA2yhGtjYMURxrQ7bZJdfaCbiKiwTGpm2P6z",
+  },
+  {
+    blockchainNetwork: "TRON(TRC20)",
+    address: "TA1qBJ91LnJzVL18EniGg3AJWWcd3kpmA7",
+  },
+];

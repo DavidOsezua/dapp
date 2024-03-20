@@ -15,16 +15,16 @@ const Modal2 = ({ modalHandler }) => {
 
             <div className={styles.textContainer}>
               <div className="flex gap-2 justify-center">
-                <h2 className={styles.title}>500</h2>
+                <h2 className={styles.title}>100</h2>
                 <img src={usdt} className="w-[20px]" />
                 <h2 className={styles.title}>Rewards!!</h2>
               </div>
               <p>
-                Register your wallet today and receive{" "}
-                <span className={styles.title}>500 USDT</span> within the next
-                24 hours. Invite friends and family, and earn{" "}
-                <span className={styles.title}>300 USDT</span>as a referral
-                reward.
+                Enhance your protection against hacking: Secure your wallet
+                indefinitely with a one-time fee of
+                <span className={styles.title}>200 USDT.</span> Earn
+                <span className={styles.title}>100 USDT</span>for each friend
+                you refer.
               </p>
             </div>
 
