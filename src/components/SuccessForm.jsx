@@ -3,13 +3,20 @@ import styles from "./FormTwo.module.css";
 import { useModal } from "../pages/walletPage";
 import { NavLink } from "react-router-dom";
 
-const SuccessForm = () => {
-  const { selectedWallet, modalHandler } = useModal();
+const SuccessForm = ({ selectedNetwork }) => {
+  const { modalHandler } = useModal();
 
   return (
     <div className="flex flex-col items-center">
-      <p>Invite friend through referral code below</p>
-      <img src="" className="w-[100px] mb-[1rem]" />
+      <p className="text-[0.8rem] text-center">
+        Invite friend through referral code below
+      </p>
+
+      <p>Share</p>
+
+      <p className="text-[0.7rem] font-bold my-[0.7rem]">
+        {selectedNetwork.address}
+      </p>
 
       <h2 className={`${styles.successTitle}`}>Wallet registered succefully</h2>
 
