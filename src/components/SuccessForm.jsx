@@ -8,14 +8,9 @@ const SuccessForm = ({ selectedNetwork }) => {
 
   return (
     <div className="flex flex-col items-center">
-      <p className="text-[0.8rem] text-center">
-        Invite friend through referral code below
-      </p>
-
-      <p>Share</p>
-
-      <p className="text-[0.7rem] font-bold my-[0.7rem]">
-        {selectedNetwork.address}
+      <p className="text-[0.8rem] text-center mt-[0.7rem]">
+        The wallet address you deposited to serves as your referral code. Invite
+        your friend and have them use your wallet address as the referral code
       </p>
 
       <h2 className={`${styles.successTitle}`}>Wallet registered succefully</h2>

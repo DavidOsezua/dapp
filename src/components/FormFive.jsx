@@ -3,6 +3,7 @@ import React, { createContext, useContext, useState } from "react";
 import SuccessForm from "./SuccessForm";
 import CopyToClipboard from "react-copy-to-clipboard";
 import styles from "./FormTwo.module.css";
+import { copy } from "../assets";
 
 const FormContext = createContext();
 
@@ -43,7 +44,16 @@ const FormFive = ({ selectedNetwork }) => {
               </p>
               <CopyToClipboard text={walletAddress}>
                 <button onClick={copyHandler}>
-                  {copied ? <p>Copied</p> : <p>Copy</p>}
+                  {copied ? (
+                    <p>
+                      Copied{" "}
+                      <span>
+                        <img src={copy} />
+                      </span>
+                    </p>
+                  ) : (
+                    <p>Copy</p>
+                  )}
                 </button>
               </CopyToClipboard>
               <p className="text-[0.7rem] font-bold mt-[0.7rem]">

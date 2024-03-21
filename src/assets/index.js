@@ -90,6 +90,7 @@ import close from "./close.svg";
 import rewardContent from "./rewardContent.svg";
 import usdt from "./usdt.svg";
 import check from "./check.svg";
+import copy from "./copy.svg"
 export {
   Logo,
   ham,
@@ -183,4 +184,5 @@ export {
   rewardContent,
   usdt,
   check,
+  copy
 };
