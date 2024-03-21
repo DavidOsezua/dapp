@@ -8,12 +8,14 @@ const SuccessForm = ({ selectedNetwork }) => {
 
   return (
     <div className="flex flex-col items-center">
-      <p className="text-[0.8rem] text-center mt-[0.7rem]">
+      <p className="text-[0.8rem] text-center my-[0.3rem]">
         The wallet address you deposited to serves as your referral code. Invite
         your friend and have them use your wallet address as the referral code
       </p>
 
-      <h2 className={`${styles.successTitle}`}>Wallet registered succefully</h2>
+      <h2 className={`${styles.successTitle} mt-[0.7rem]`}>
+        Wallet registered succefully
+      </h2>
 
       <button className={`${styles.btn} max-w-[350px] `} onClick={modalHandler}>
         Close

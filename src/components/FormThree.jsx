@@ -42,6 +42,7 @@ const FormThree = () => {
       );
 
     setInput("");
+    setSecondInput("");
   };
   return (
     <>
